@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayur CJ Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("nUCheZmVgdMdmG-Sd");
+        })();
+    </script>
+</head>
+<body>
+    <!-- Portfolio Header -->
+    <header>
+        <h1>Mayur CJ</h1>
+        <p>Computer Science Engineer at Mysuru Royal Institute of Technology</p>
+        <img src="images/hahfajs.jpg" alt="Profile Image" id="profile-img">
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m Mayur CJ, a Computer Science Engineering student. I'm passionate about web development, game development, and software engineering.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Pac-Man Game (Python and OpenGL)</h3>
+                <p>An interactive Pac-Man game built with Python and OpenGL.</p>
+                <a href="files/pac.pdf" download="Pac.pdf">Download Project Summary (PDF)</a><br>
+                <a href="files/pac.zip" download="Pac.zip">Download Code (ZIP)</a>
+            </li>
+            <li>
+                <h3>AERO Game (Pygame)</h3>
+                <p>A simple arcade-style game built using Pygame, with obstacle and health management.</p>
+                <a href="files/aero_summary.pdf" download="AERO_Project_Summary.pdf">Download Project Summary (PDF)</a><br>
+                <a href="files/aero_code.zip" download="AERO_Game_Code.zip">Download Code (ZIP)</a>
+            </li>
+            <li>
+                <h3>Student-Teacher Appointment Website</h3>
+                <p>A web app for managing student-teacher appointments using HTML, CSS, JavaScript, and Firebase.</p>
+                <a href="files/appointment_summary.pdf" download="Appointment_Project_Summary.pdf">Download Project Summary (PDF)</a><br>
+                <a href="files/appointment_code.zip" download="Appointment_Website_Code.zip">Download Code (ZIP)</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, OpenGL, Pygame</li>
+            <li>React.js, Firebase</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email_id">Your Email:</label>
+            <input type="email_id" id="email_id" name="email_id" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- JavaScript to handle EmailJS integration -->
+    <script src="app.js"></script>
+</body>
+</html>
